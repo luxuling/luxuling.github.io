@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500&display=swap');
+*{
+  font-family: 'Fira Code', monospace;
+  overflow: overlay;
+}
+.menu-active span:nth-child(1){
+  @apply relative rotate-45 top-1/2 -translate-y-1/2
+}
+.menu-active span:nth-child(2){
+  @apply scale-0 invisible
+}
+.menu-active span:nth-child(3){
+  @apply -rotate-45 relative bottom-1/2 translate-y-1/2
+}
+pre{
+  overflow: overlay;
+}
+.my-code::-webkit-scrollbar{ 
+  @apply h-[6px]
+}
+.my-code::-webkit-scrollbar-thumb{
+  @apply bg-myGreen rounded-full
+}
+::-webkit-scrollbar{
+  background-color: transparent;
+}
+.snake-board{
+  background: linear-gradient(150.26deg, rgba(23, 85, 83, 0.7) 1.7%, rgba(67, 217, 173, 0.091) 81.82%);
+}
+.rules{
+  background: rgba(1, 20, 35, 0.19);
+}
+.snake-place{
+  box-shadow: inset 1px 5px 11px rgba(2, 18, 27, 0.71);
+}
