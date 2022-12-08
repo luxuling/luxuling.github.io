@@ -67,7 +67,7 @@ const projectArray = [
     color: 'bg-myGreen',
     tech: 'nodejs',
     desc: 'This api are use in my chat app, created with express and mongoDB.',
-    pic: './src/assets/img/bcchat.png',
+    pic: './src/assets/img/bcchat.jpg',
     link: 'https://github.com/luxuling/rest-full-api-chat',
   },
   {
