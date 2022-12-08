@@ -33,7 +33,9 @@ const Educations = () => {
           <span>I'm a high school graduate, and I haven't gone to college yet, but I'm confident in my abilities in web development. and I have some course certificates from <a href="https://www.dicoding.com" target="blank" className="underline text-myBlue">dicoding.com</a></span>
         </div>
         <div className="text-myWhite mt-10">
-          <span>// some certivicate that i earn</span>
+          <span>
+            // somecertificates that i earn
+          </span>
         </div>
         <div className="flex gap-3 items-start mt-8">
           <div className="rounded-full h-[35px] w-[36px] overflow-hidden">
@@ -89,7 +91,9 @@ const Educations = () => {
                 <img src={mouse} alt="" />
               </div>
               <div className="text-myWhite mt-10">
-                <span>// some certivicate that i earn</span>
+                <span>
+                  // somecertificates that i earn
+                </span>
               </div>
               <div className="flex gap-3 items-start mt-8">
                 <div className="rounded-full h-[35px] w-[36px] overflow-hidden">
