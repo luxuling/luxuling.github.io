@@ -7,7 +7,7 @@ import { GoLinkExternal } from 'react-icons/go';
 import { useInView } from 'framer-motion';
 import pp from '../../assets/img/pp.jpg';
 import mouse from '../../assets/img/mouse.png';
-import certivication from '../../assets/json/certivicate.json';
+import certificate from '../../data/certificates';
 
 const Educations = () => {
   const eduRef = useRef(null);
@@ -30,9 +30,7 @@ const Educations = () => {
           <h1 className="text-myWhite">// personal-info <span className="text-mySlate">/ educatons</span></h1>
         </div>
         <div className="text-mySlate max-w-[320px] gap-4 flex-col flex mt-3">
-          <p>
-            I'm a high school graduate, and I haven't gone to college yet, but I'm confident in my abilities in web development. and I have some course certificates from dicoding
-          </p>
+          <span>I'm a high school graduate, and I haven't gone to college yet, but I'm confident in my abilities in web development. and I have some course certificates from <a href="https://www.dicoding.com" target="blank" className="underline text-myBlue">dicoding.com</a></span>
         </div>
         <div className="text-myWhite mt-10">
           <span>// some certivicate that i earn</span>
@@ -51,7 +49,7 @@ const Educations = () => {
           </div>
         </div>
         <div className="flex flex-col items-center mt-9 gap-3">
-          {certivication.map((item) => {
+          {certificate.map((item) => {
             return (
               <div className="max-w-[350px] relative group hover:rounded-lg transition-all ease-in-out duration-300">
                 <a href={item.link} target="blank" className="absolute cursor-pointer w-full h-full flex items-center justify-center text-myBlue backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-all ease-in-out duration-300 text-xl">
@@ -107,7 +105,7 @@ const Educations = () => {
                 </div>
               </div>
               <div className="flex flex-col items-center mt-9 gap-3">
-                {certivication.map((item) => {
+                {certificate.map((item) => {
                   return (
                     <div className="max-w-[350px] relative group hover:rounded-lg transition-all ease-in-out duration-300">
                       <a href={item.link} target="blank" className="absolute cursor-pointer w-full h-full flex items-center justify-center text-myBlue backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-all ease-in-out duration-300 text-xl">
