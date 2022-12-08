@@ -7,6 +7,15 @@ import { SiTailwindcss } from 'react-icons/si';
 import { GrNode } from 'react-icons/gr';
 
 import mapala from '../assets/img/mapala.png';
+import bcchat from '../assets/img/bcchat.jpg';
+import frchat from '../assets/img/frchat.png';
+import ftapp from '../assets/img/ftapp.png';
+import healing from '../assets/img/healing.png';
+import tailwindpr from '../assets/img/tailwindpr.png';
+import tuntong from '../assets/img/tuntong.png';
+import yt from '../assets/img/yt.png';
+import wa from '../assets/img/wa.png';
+import vanilla from '../assets/img/vanila.png';
 
 const projectArray = [
   {
@@ -24,7 +33,7 @@ const projectArray = [
     color: 'bg-linkColor',
     tech: 'html',
     desc: "This is someone on tiktok's figma design slicing project.",
-    pic: './assets/img/healing.png',
+    pic: healing,
     link: 'https://github.com/luxuling/youtube-web-clone',
   },
   {
@@ -33,7 +42,7 @@ const projectArray = [
     color: 'bg-reactColor',
     tech: 'react',
     desc: "This is my friend's order to make a responsive website portfolio.",
-    pic: './assets/img/tuntong.png',
+    pic: tuntong,
     link: 'https://ilhamquro.github.io/',
   },
   {
@@ -42,7 +51,7 @@ const projectArray = [
     color: 'bg-reactColor',
     tech: 'react',
     desc: 'youtube clone almost all fitures and responsive project with api from rapidapi.',
-    pic: './assets/img/yt.png',
+    pic: yt,
     link: 'https://github.com/luxuling/youtube-web-clone',
   },
   {
@@ -51,7 +60,7 @@ const projectArray = [
     color: 'bg-reactColor',
     tech: 'react',
     desc: 'whatsapp web clone almost all fitures.',
-    pic: './assets/img/wa.png',
+    pic: wa,
     link: 'https://github.com/luxuling/react-whatsappweb-clone',
   },
   {
@@ -60,7 +69,7 @@ const projectArray = [
     color: 'bg-reactColor',
     tech: 'react',
     desc: 'Make chat app ui with react and tailwindcss and fetch my own api.',
-    pic: './assets/img/frchat.png',
+    pic: frchat,
     link: 'https://github.com/luxuling/front-end-chat-app',
   },
   {
@@ -69,7 +78,7 @@ const projectArray = [
     color: 'bg-myGreen',
     tech: 'nodejs',
     desc: 'This api are use in my chat app, created with express and mongoDB.',
-    pic: './assets/img/bcchat.jpg',
+    pic: bcchat,
     link: 'https://github.com/luxuling/rest-full-api-chat',
   },
   {
@@ -78,7 +87,7 @@ const projectArray = [
     color: 'bg-reactColor',
     tech: 'react',
     desc: 'Make fitnes app with react and tailwind and fetch api from rapidapi.',
-    pic: './assets/img/ftapp.png',
+    pic: ftapp,
     link: 'https://github.com/luxuling/fitness-APP',
   },
   {
@@ -87,7 +96,7 @@ const projectArray = [
     color: 'bg-reactColor',
     tech: 'tailwindcss',
     desc: 'First portfolio website are created use tailwindcss.',
-    pic: './assets/img/tailwind-pr.png',
+    pic: tailwindpr,
     link: 'https://github.com/luxuling/portfolio-tailwindcss',
   },
   {
@@ -96,7 +105,7 @@ const projectArray = [
     color: 'bg-reactColor',
     tech: 'tailwindcss',
     desc: 'Responsive vanilla web that i build for submiting asignment in dicoding.',
-    pic: './assets/img/vanila.png',
+    pic: vanilla,
     link: 'https://github.com/luxuling/portfolio-tailwindcss',
   },
 ];

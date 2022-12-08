@@ -13,6 +13,9 @@ const Navbar = () => {
     } else {
       localStorage.setItem('menu', JSON.stringify(0));
     }
+    return () => {
+      localStorage.clear();
+    };
   }, []);
   const clickMenuHandler = (i) => {
     setClickedMenu(i);
