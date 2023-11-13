@@ -1,14 +1,14 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import About from './pages/About';
+import Navbar from './components/Navbar/Index';
+import About from './pages/about/Index';
 import Contact from './pages/Contact';
 import Home from './pages/Home';
 import Project from './pages/Project';
-import Bio from './utils/about/Bio';
-import Educations from './utils/about/Educations';
-import Hobbie from './utils/about/Hobbie';
-import Interest from './utils/about/Interest';
+import Bio from './pages/about/Bio';
+import Educations from './pages/about/Educations';
+import Hobbie from './pages/about/Hobbie';
+import Interest from './pages/about/Interest';
 
 const App = () => {
   return (

@@ -1,5 +1,7 @@
+/* eslint-disable jsx-a11y/heading-has-content */
 import React from 'react';
 import TextTransition, { presets } from 'react-text-transition';
+import Typed from 'typed.js';
 import bgBlur1 from '../assets/svg/bgBlur1.svg';
 import bgBlur2 from '../assets/svg/bgBlur2.svg';
 import Footer from '../components/Footer';
@@ -7,18 +9,30 @@ import SnakeGame from '../components/SnakeGame';
 
 const Home = () => {
   const [index, setIndex] = React.useState(0);
-
+  const nameElement = React.useRef(null);
   const TEXTS = [
-    'front-end web developer',
-    'freelancer web developer',
-    'joki tugas kuliah',
+    'Front-End Engineer',
+    'ReactJS Developer',
+    'VueJS Developer',
   ];
+
   React.useEffect(() => {
+    // typing animated iinitialize
+    const typed = new Typed(nameElement.current, {
+      strings: ['Antoni Saputra'],
+      typeSpeed: 100,
+      cursorChar: '_',
+    });
+
     const intervalId = setInterval(
       () => setIndex((i) => i + 1),
       3000, // every 3 seconds
     );
-    return () => clearTimeout(intervalId);
+
+    return () => {
+      clearTimeout(intervalId);
+      typed.destroy();
+    };
   }, []);
   return (
     <div className="h-screen flex flex-col w-full bg-lightPrimary pt-[60px]">
@@ -28,12 +42,12 @@ const Home = () => {
         <div className="flex flex-col gap-[9rem] md:gap-[4rem]">
           <div className="text-myWhite w-full flex flex-col">
             <h1>Hi all. I am</h1>
-            <div className="md:w-auto md:inline-flex md:h-20 md:pt-2 md:overflow-x-hidden md:whitespace-nowrap md:text-brand-accent md:will-change-transform w-[240px] md:overflow-hidden">
-              <h1 className="text-[3rem] md:inline">Antoni Saputra</h1>
-              <span className="absolute hidden -bottom-0 left-0 -top-1 md:inline-block bg-lightPrimary w-full animate-type will-change"><span
+            <div className="w-auto inline-flex items-end md:pt-2 md:overflow-x-hidden  md:overflow-hidden">
+              <h1 ref={nameElement} className="text-[3rem] max-w-[210px] lg:max-w-none" />
+              {/* <span className="absolute hidden -bottom-0 left-0 -top-1 md:inline-block bg-lightPrimary w-full animate-type will-change"><span
                 className="box-border inline-block w-1 h-10 -mb-2 bg-white md:-mb-4 md:h-16 animate-cursor will-change-transform"
               />
-              </span>
+              </span> */}
             </div>
             <span className="text-myGreen flex gap-2 md:text-myBlue md:font-medium text-lg">{'>'}
               <TextTransition springConfig={presets.wobbly}>

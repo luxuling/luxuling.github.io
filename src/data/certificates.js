@@ -3,6 +3,7 @@ import cr2 from '../assets/img/cr2.jpg';
 import cr3 from '../assets/img/cr3.jpg';
 import cr4 from '../assets/img/cr4.jpg';
 import cr5 from '../assets/img/cr5.jpg';
+import cr6 from '../assets/img/cr6.jpg';
 
 const certificate = [
   {
@@ -24,6 +25,10 @@ const certificate = [
   {
     img: cr5,
     link: 'https://www.dicoding.com/certificates/4EXG9NJ2EZRL',
+  },
+  {
+    img: cr6,
+    link: 'https://www.dicoding.com/certificates/81P28RY7JPOY',
   },
 ];
 export default certificate;

@@ -1,25 +1,22 @@
 /* eslint-disable react/no-array-index-key */
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import MobileMenu from '../utils/navbar/MobileMenu';
+import MobileMenu from './MobileMenu';
 
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
   const [clickedMenu, setClickedMenu] = useState(0);
   useEffect(() => {
-    const menuStorage = localStorage.getItem('menu');
+    const menuStorage = sessionStorage.getItem('menu');
     if (menuStorage !== null) {
       setClickedMenu(JSON.parse(menuStorage));
     } else {
-      localStorage.setItem('menu', JSON.stringify(0));
+      sessionStorage.setItem('menu', JSON.stringify(0));
     }
-    return () => {
-      localStorage.clear();
-    };
   }, []);
   const clickMenuHandler = (i) => {
     setClickedMenu(i);
-    localStorage.setItem('menu', JSON.stringify(i));
+    sessionStorage.setItem('menu', JSON.stringify(i));
   };
   const menuHandler = () => {
     document.getElementById('hamburger').classList.toggle('menu-active');

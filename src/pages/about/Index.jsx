@@ -5,7 +5,7 @@ import {
 import {
   Link, Outlet,
 } from 'react-router-dom';
-import Footer from '../components/Footer';
+import Footer from '../../components/Footer';
 
 const About = () => {
   const [clickFile, setClickFile] = useState(0);

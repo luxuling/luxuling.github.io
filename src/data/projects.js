@@ -16,8 +16,48 @@ import tuntong from '../assets/img/tuntong.png';
 import yt from '../assets/img/yt.png';
 import wa from '../assets/img/wa.png';
 import vanilla from '../assets/img/vanila.png';
+import music from '../assets/img/music.png';
+import exportPng from '../assets/img/export.png';
+import fns from '../assets/img/fns.png';
+import rdx from '../assets/img/rdx.png';
 
 const projectArray = [
+  {
+    name: 'radix-tailwind',
+    icon: RiReactjsFill,
+    color: 'bg-reactColor',
+    tech: 'react',
+    desc: 'Project that i created for someone to implement radix with tailwind.',
+    pic: rdx,
+    link: 'https://radix-tailwind.netlify.app/',
+  },
+  {
+    name: 'freelance-web-property',
+    icon: RiReactjsFill,
+    color: 'bg-reactColor',
+    tech: 'react',
+    desc: 'Project ordered by company that want to sell a property.',
+    pic: fns,
+    link: 'https://funnisaresidence.com/',
+  },
+  {
+    name: 'freelance-web-export',
+    icon: RiReactjsFill,
+    color: 'bg-reactColor',
+    tech: 'react',
+    desc: 'Project ordered by company that provide some export product.',
+    pic: exportPng,
+    link: 'https://hakatagroup.com/',
+  },
+  {
+    name: 'freelance-web-music',
+    icon: RiReactjsFill,
+    color: 'bg-reactColor',
+    tech: 'react',
+    desc: 'Project ordered by music group.',
+    pic: music,
+    link: 'http://frmusikproduction.com/',
+  },
   {
     name: 'freelance-web-collage',
     icon: RiCss3Fill,
